@@ -1,0 +1,19 @@
+{
+  "name": "gulp-po2json",
+  "description": "Gulp plugin to convert PO files to Jed compatible JSON files",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "author": {
+    "name": "Thomas Kallevik",
+    "email": "thomas@sysco.no"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "dependencies": {
+    "po2json": "~0.3.0",
+    "through2": "~0.5.1",
+    "gulp-util": "~3.0.0"
+  }
+}
