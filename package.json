@@ -12,7 +12,7 @@
     "node": ">= 0.10.0"
   },
   "dependencies": {
-    "po2json": "~0.3.0",
+    "po2json": "~0.4.0",
     "through2": "~0.5.1",
     "gulp-util": "~3.0.0"
   }
