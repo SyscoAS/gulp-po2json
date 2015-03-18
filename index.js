@@ -3,6 +3,7 @@
 var po2json = require('po2json');
 var path    = require('path');
 var through = require('through2');
+var _       = require('underscore')
 var gutil   = require('gulp-util');
 var PluginError = gutil.PluginError;
 var File        = gutil.File;
@@ -29,9 +30,9 @@ module.exports = function(filename, options) {
     }
 
     var domainName = path.basename(file.path, path.extname(file.path));
-    var domainData = po2json.parse(file.contents, options);
+    var domainData = po2json.parse(file.contents, _.extend(options, { domain: domainName }));
 
-    combinedJson[domainName] = domainData;
+    combinedJson[domainName] = domainData.locale_data[domainName];
 
     callback();
   }

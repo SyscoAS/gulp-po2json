@@ -14,6 +14,7 @@
   "dependencies": {
     "po2json": "~0.4.0",
     "through2": "~0.5.1",
-    "gulp-util": "~3.0.0"
+    "gulp-util": "~3.0.0",
+    "underscore": "~1.8.2"
   }
 }
